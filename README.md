@@ -11,13 +11,13 @@
 
   Son los tipos de datos más simples y directos que existen en el lenguaje.
 
-  *   **Números:** Representa números, tanto enteros como decimales.
-  *   **Strings:** Representa cadenas de texto.
-  *   **Booleans:** Representa valores lógicos: `true` (verdadero) o `false` (falso). Se utilizan para tomar decisiones en el código.
-  *   **Null:** Es un valor asignado explícitamente a una variable para indicar que no tiene un valor.
-  *   **Undefined:** Representa una variable a la que no se le ha asignado un valor.
-  *   **BigInt:** Se utiliza para representar números enteros muy grandes.
-  *   **Symbol:** Se utiliza para crear identificadores únicos.
+  - **Números:** Representa números, tanto enteros como decimales.
+  - **Strings:** Representa cadenas de texto.
+  - **Booleans:** Representa valores lógicos: `true` (verdadero) o `false` (falso). Se utilizan para tomar decisiones en el código.
+  - **Null:** Es un valor asignado explícitamente a una variable para indicar que no tiene un valor.
+  - **Undefined:** Representa una variable a la que no se le ha asignado un valor.
+  - **BigInt:** Se utiliza para representar números enteros muy grandes.
+  - **Symbol:** Se utiliza para crear identificadores únicos.
 
   <h4>Script</h4>
 
@@ -33,9 +33,9 @@
 
    Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
    Uso:
-   *    Declaración de variables
-   *    Condicional if
-   *    Operadores de comparación de variables (<,>, <=, >=) para determinar el rango de la nota.
+   -   Declaración de variables
+   -   Condicional if
+   -    Operadores de comparación de variables (<,>, <=, >=) para determinar el rango de la nota.
 
 
   <h4>Script</h4>
