@@ -16,5 +16,7 @@ con `let`, `const` o `var`.
 - bigInt: Se utiliza para representa números enteros muy grandes
 - Symbol: Se utiliza para crear identificadores únicos.
 
-
-
+### Script ###
+![Code](media/code.png)
+### Output ###
+![Output](media/code%2002.png)
