@@ -3,9 +3,9 @@
 **JavaScript** es el lenguaje de programación que hace que las páginas web sean interactivas. Desde efectos visuales y animaciones hasta la gestión de datos y la interacción con el usuario, JavaScript es el motor que impulsa la web moderna.
 
 
-## Clase 01 - Intro JS
+## [Clase 01 - Intro JS](https://github.com/yuleiditho/Modulo-03-JS/tree/main/01-%20Intro%20JS) 
 
- [**Datos primitivos:**](https://github.com/yuleiditho/Modulo-03-JS/tree/main/01-%20Intro%20JS) 
+ **Datos primitivos:**
  Son los tipos de datos más simples y directos que existen en el lenguaje. 
  - **Números:** Representa números, tanto enteros como decimales. 
  - **Strings:** Representa cadenas de texto. 
@@ -16,6 +16,4 @@
  - **Symbol:** Se utiliza para crear identificadores únicos. 
 
 ### Script
-<div style="display: flex;">  <img src="media/code.png" alt="Code" width="1000">
-  <img src="media/code-02.png" alt="Output" >
-</div>
+![Code](media/class-01.png)
