@@ -2,43 +2,50 @@
 
 **JavaScript** es el lenguaje de programación que hace que las páginas web sean interactivas. Desde efectos visuales y animaciones hasta la gestión de datos y la interacción con el usuario, JavaScript es el motor que impulsa la web moderna.
 
-<details>
-  <summary style="font-size: 1.5em;">
-   Clase 01 - Intro JS
-  </summary>
+## Contenido del Módulo
 
-  <h3 id="class-01-js"> <a href="https://github.com/yuleiditho/Modulo-03-JS/tree/main/01-%20Intro%20JS" target="_blank">Datos primitivos</a> </h3>
+### Clase 01 - Introducción a JS
+
+<details>
+  <summary>Datos primitivos</summary>
 
   Son los tipos de datos más simples y directos que existen en el lenguaje.
 
-  - **Números:** Representa números, tanto enteros como decimales.
-  - **Strings:** Representa cadenas de texto.
-  - **Booleans:** Representa valores lógicos: `true` (verdadero) o `false` (falso). Se utilizan para tomar decisiones en el código.
-  - **Null:** Es un valor asignado explícitamente a una variable para indicar que no tiene un valor.
-  - **Undefined:** Representa una variable a la que no se le ha asignado un valor.
-  - **BigInt:** Se utiliza para representar números enteros muy grandes.
-  - **Symbol:** Se utiliza para crear identificadores únicos.
+  *   **Números:** Representan números, tanto enteros como decimales.
+  *   **Cadenas (Strings):** Representan texto.
+  *   **Booleanos (Booleans):** Representan valores lógicos: `true` (verdadero) o `false` (falso). Se utilizan para tomar decisiones en el código.
+  *   **Null:** Es un valor asignado explícitamente a una variable para indicar que no tiene un valor.
+  *   **Undefined:** Representa una variable a la que no se le ha asignado un valor.
+  *   **BigInt:** Se utiliza para representar números enteros muy grandes.
+  *   **Symbol:** Se utiliza para crear identificadores únicos.
 
-  <h4>Script</h4>
+  #### Script
 
-  <img src="media/class-01.png" alt="Code" width="700">
+  ![Código de la clase 01](media/class-01.png)
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/tree/main/01-%20Intro%20JS)
 </details>
 
+### Clase 02 - Comparaciones y Decisiones
+
 <details>
-  <summary style="font-size: 1.5em;">
-    Clase 02 - Comparaciones y decisiones
-  </summary>
+  <summary>Evaluador de Notas con Mensajes Personalizados</summary>
 
-  <h3 id="class-02-js">Problema: Evaluador de Notas con Mensajes Personalizados</h3>
+  Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
 
-   Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
-   Uso:
-   -   Declaración de variables
-   -   Condicional if
-   -    Operadores de comparación de variables (<,>, <=, >=) para determinar el rango de la nota.
+  **Objetivos:**
 
+  *   Declaración de variables.
+  *   Uso de condicionales `if`, `else if` y `else`.
+  *   Uso de operadores de comparación (`<`, `>`, `<=`, `>=`) para determinar el rango de la nota.
+  *   Impresión de mensajes personalizados en la consola.
 
-  <h4>Script</h4>
+  **Rango de notas y mensajes:**
 
-  <img src="" alt="Code" width="700">
+  *   Si la nota es 90 o más: "Excelente".
+  *   Si la nota está entre 75 y 89: "Bien".
+  *   Si la nota está entre 60 y 74: "Suficiente".
+  *   Si la nota es menor de 60: "No aprobado".
+
+  #### Script
+
 </details>
