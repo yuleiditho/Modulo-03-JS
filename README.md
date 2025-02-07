@@ -19,25 +19,10 @@
   *   **BigInt:** Se utiliza para representar números enteros muy grandes.
   *   **Symbol:** Se utiliza para crear identificadores únicos.
 
-<<<<<<< HEAD
   [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/01-%20Intro%20JS/tipo-de-datos.js)<br>
 
   ![Código de la clase 01](media/class-01.png)
   
-=======
-  *   **Números:** Representan números, tanto enteros como decimales.
-  *   **Cadenas (Strings):** Representan texto.
-  *   **Booleanos (Booleans):** Representan valores lógicos: `true` (verdadero) o `false` (falso). Se utilizan para tomar decisiones en el código.
-  *   **Null:** Es un valor asignado explícitamente a una variable para indicar que no tiene un valor.
-  *   **Undefined:** Representa una variable a la que no se le ha asignado un valor.
-  *   **BigInt:** Se utiliza para representar números enteros muy grandes.
-  *   **Symbol:** Se utiliza para crear identificadores únicos.
-
-  #### Script
-
-  ![Código de la clase 01](media/class-01.png)
-  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/tree/main/01-%20Intro%20JS)
->>>>>>> a1e5f53183fe2b483de801a30464c564bedc2a80
 </details>
 
 ### Clase 02 - Comparaciones y Decisiones
@@ -45,11 +30,7 @@
 <details>
   <summary>Evaluador de Notas con Mensajes Personalizados</summary>
 
-<<<<<<< HEAD
    <br>Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
-=======
-  Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
->>>>>>> a1e5f53183fe2b483de801a30464c564bedc2a80
 
   **Objetivos:**
 
