@@ -39,13 +39,6 @@
   *   Uso de operadores de comparación (`<`, `>`, `<=`, `>=`) para determinar el rango de la nota.
   *   Impresión de mensajes personalizados en la consola.
 
-  **Rango de notas y mensajes:**
-
-  *   Si la nota es 90 o más: "Excelente".
-  *   Si la nota está entre 75 y 89: "Bien".
-  *   Si la nota está entre 60 y 74: "Suficiente".
-  *   Si la nota es menor de 60: "No aprobado".
-
   #### Script
 
   [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/02-Comp_Dec_JS/evaluador-notas.js)<br>
