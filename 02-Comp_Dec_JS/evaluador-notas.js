@@ -4,7 +4,6 @@ function evaluarAlumno(nota){
     //Validar que la nota esté en el rango de 0 a 100
     if (nota >= 0 && nota <= 100){
         console.log("El alumno obtuvo una nota de: " + nota);
-        //Evaluar la nota y mostrar un mensaje
         if(nota >= 90){
             console.log("Excelente");
         }else if(nota >= 75 && nota <= 89){
@@ -19,11 +18,14 @@ function evaluarAlumno(nota){
     }
 }
 
+
 //Ejecución de la función con diferentes notas
 let nota1 = 45;
 evaluarAlumno(nota1);
 
-let nota2 = 200;
+evaluarAlumno(100);
+
+let nota2 = -50;
 evaluarAlumno(nota2);
 
 let nota3 = 74;
