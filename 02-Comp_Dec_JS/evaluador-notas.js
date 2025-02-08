@@ -18,7 +18,6 @@ function evaluarAlumno(nota){
     }
 }
 
-
 //Ejecución de la función con diferentes notas
 let nota1 = 45;
 evaluarAlumno(nota1);
@@ -28,6 +27,9 @@ evaluarAlumno(nota2);
 
 let nota3 = -50;
 evaluarAlumno(nota3);
+
+let nota4 = 0;
+evaluarAlumno(nota4);
 
 //Generar una nota aleatoria y evaluarla
 let notaAleatoria = Math.floor(Math.random() * 101);
