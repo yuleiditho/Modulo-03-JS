@@ -23,12 +23,10 @@ function evaluarAlumno(nota){
 let nota1 = 45;
 evaluarAlumno(nota1);
 
-evaluarAlumno(100);
-
-let nota2 = -50;
+let nota2 = 74;
 evaluarAlumno(nota2);
 
-let nota3 = 74;
+let nota3 = -50;
 evaluarAlumno(nota3);
 
 //Generar una nota aleatoria y evaluarla
