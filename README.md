@@ -30,7 +30,7 @@
 <details>
   <summary>Evaluador de Notas con Mensajes Personalizados</summary>
 
-   <br>Crea un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
+   <br>Crear un programa en JavaScript que evalúe la nota de un estudiante y genere un mensaje personalizado basado en la nota.
 
   **Objetivos:**
 
@@ -47,5 +47,9 @@
   *   Si la nota es menor de 60: "No aprobado".
 
   #### Script
+
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/02-Comp_Dec_JS/evaluador-notas.js)<br>
+
+  ![Código de la clase 01](media/class-02.png)
 
 </details>
