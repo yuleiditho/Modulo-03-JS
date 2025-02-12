@@ -34,7 +34,7 @@ function countFruits(array){
             }
         }
 
-        //Si el tipo es válido incremeta el contador de la categoría
+        //Si el tipo es válido incrementa el contador de la categoría
         if(tipo){
             contadorCategorias[tipo].cantidad++;
             contadorCategorias[tipo].frutas.push(fruta);
