@@ -39,10 +39,29 @@
   *   Uso de operadores de comparación (`<`, `>`, `<=`, `>=`) para determinar el rango de la nota.
   *   Impresión de mensajes personalizados en la consola.
 
-  #### Script
 
   [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/02-Comp_Dec_JS/evaluador-notas.js)<br>
 
-  ![Código de la clase 01](media/class-02.png)
+  ![Código](media/class-02.png)
+
+</details>
+
+### Clase 03 - Ciclos y Arreglos
+
+<details>
+  <summary>Problema: Clasificación de Frutas</summary>
+
+   <br>Crear un programa que clasifica las frutas según su tipo y cuenta cuántas hay de cada tipo.
+
+  **Objetivos:**
+
+  *   Practicar la lógica de control de flujo: `for` y `while`.
+  *   Aprender a usar arreglos para almacenar datos.
+  *   Utilizar objetos para contar y clasificar elementos.
+
+
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/03-Arrays_Ciclos/contador-frutas.js)<br>
+
+  ![Código](media/code-03.png)
 
 </details>
