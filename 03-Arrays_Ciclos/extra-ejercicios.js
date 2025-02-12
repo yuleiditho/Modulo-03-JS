@@ -67,3 +67,77 @@ colores.pop();
 
 console.log('Cantidad de colores =', colores.length);
 console.log(colores); // Muestra el array modificado
+
+let contador=0;
+
+/* do{
+    contador = parseInt(prompt("Ingresa un no. mayor a 20: "));
+}while(contador <=20);
+
+alert("El número es: " + contador);
+ */
+
+let numUser = 0;
+
+numUser = parseInt(prompt("Ingresa un número: "));
+for(let i=1; i<=10; i++){
+    console.log(numUser, '*', i, '=', i*numUser);
+}
+
+// Contar los dígitos de un número
+
+
+// Obtener la suma de los dígitos de un número
+
+let sumNum = prompt("Ingresa un número: ");
+let suma = 0; // Inicializar la variable suma en 0
+
+for (let i = 0; i < sumNum.length; i++) {
+    // Asegurarse de que cada carácter sea un dígito antes de convertirlo a número
+    if (!isNaN(parseInt(sumNum[i]))) {
+        suma += parseInt(sumNum[i]);
+    }
+}
+
+console.log("La suma es:", suma);
+
+
+//Contador 
+function mostrarDigitosFor(numero) {
+    let numStr = numero.toString(); // Convertimos el número a string
+    console.log(`Los dígitos de ${numero} son:`);
+    for (let i = 0; i < numStr.length; i++) {
+        console.log(numStr[i]);
+    }
+}
+// Llamar a la función con el número deseado
+mostrarDigitosFor(960913);
+//Suma de digitos 
+function sumarDigitos(numero) {
+    let numStr = numero.toString(); // Convertimos el número a string
+    let suma = 0;
+    for (let i = 0; i < numStr.length; i++) {
+        suma += parseInt(numStr[i]); // Convertimos cada carácter a número y lo sumamos
+    }
+    console.log(`La suma de los dígitos de ${numero} es: ${suma}`);
+}
+// Llamar a la función con el número deseado
+sumarDigitos(960913);
+
+
+//contar digitos de un numero
+let numero = "aaa1122aa22";
+let numeros = "1234567890"
+let i = 0;
+contador =0;
+resultado=0;
+while (i < numero.length){
+    if (numeros.includes(numero[i])) {
+        contador++;
+        //suma de los digitos de un numero
+        resultado += parseInt(numero[i]);
+    }
+    i++;
+}
+console.log("Tiene : " + contador + " digitos");
+console.log("El resultado es : " + resultado);

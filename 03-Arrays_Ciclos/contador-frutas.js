@@ -3,53 +3,63 @@ Problema: Clasificación de Frutas
 Imagina que tienes un programa que clasifica las frutas según su tipo y cuenta cuántas hay de cada tipo.
 */
 
-//Función para contar las frutas con el uso del Ciclo For
+//Función para clasificar y contar las frutas por categorías
 function countFruits(array){
-    let contadorFrutas = {}; // Objeto para almacenar la cantidad de cada tipo de fruta
+    //Objeto que contiene las listas de frutas clasificadas por categorías
+    let clasificacionFrutas = {
+        acidas: ["kimi", "limón", "pomelo", "naranja", "manzana", "uva", "arándano", "piña"],
+        semiacidas: ["fresa", "membrillo", "níspero", "ciruela", "melocotón", "mango", "mandarina", "frambuesa"],
+        neutras: ["coco", "aguacate", "aceituna","almendra", "avellana", "cacahuate", "nuez"],
+        dulces: ["plátano", "cereza", "higo", "melón", "sandía", "pera", "granada", "chirimaya"]
+    };
+
+    //Objeto que almacena los contadores de cada categoría de fruta
+    let contadorCategorias = {
+        acidas: {cantidad:0, frutas:[]},
+        semiacidas: {cantidad:0, frutas:[]},
+        neutras: {cantidad:0, frutas:[]},
+        dulces: {cantidad:0, frutas:[]},
+    };
+    
+    //Recorrer el array de frutas para clasificar y contar
     for(let i in array){
-        let fruta = array[i]; // Obtener la fruta actual del arreglo
-        if(contadorFrutas[fruta]){  // IF: la fruta ya existe en el objeto
-            contadorFrutas[fruta]++; // Incrementa el contador de esa fruta
-        }else{
-            contadorFrutas[fruta] = 1; // Se inicializa el contador de esa fruta 
-        }
-    }
-    return contadorFrutas; // Devuelve el objeto con el conteo de frutas
-}
+        let fruta = array[i]; // Obtener la fruta actual
+        let tipo = null;      // Inicializar la variable tipo
 
-//Función para contar las frutas con el uso del Ciclo While
-function countItems(array){
-    let contadorItems = {};
-    let i = 0;
-    while( i < array.length){
-        let count = array[i];
-        if(contadorItems[count]){
-            contadorItems[count]++;
-        }else{
-            contadorItems[count] = 1;
+        //Determinar el tipo de fruta
+        for(let valor in clasificacionFrutas){
+            if(clasificacionFrutas[valor].includes(fruta)) {
+                tipo = valor;       //Asignar la categoría que corresponde a la fruta
+                break;              //Detiene el bucle una vez que encuentra la categoría de la fruta
+            }
         }
-        i++;
+
+        //Si el tipo es válido incremeta el contador de la categoría
+        if(tipo){
+            contadorCategorias[tipo].cantidad++;
+            contadorCategorias[tipo].frutas.push(fruta);
+        }
+        
     }
-    return contadorItems;
+    return contadorCategorias; 
 }
 
 
-//Función para imprimir los datos en la consola
-function impressData(array){
+// Función para imprimir los datos en formato tabla
+function impressData(array) {
+    console.log("Categoría\t\t| Cantidad\t| Frutas");
+    console.log("------------------------------------------------------");
+
     for (let element in array) {
-        console.log(`${element}\t\t| ${array[element]}`);
+        console.log(`${element}\t\t\t| ${array[element].cantidad}\t\t\t| ${array[element].frutas.join(", ")}`);
     }
-} 
+}
+
 
 // Arreglo llamado frutas con varios tipos de frutas
-let frutas = ["manzana", "fresa", "manzana", "naranja", "fresa", "uvas", "manzana", "pera", "naranja", "uvas", "guayaba"];
-let contadorFrutas = countFruits(frutas); //Uso del ciclo for
-impressData(contadorFrutas);
-console.table(countFruits(frutas)); //Imprime en formato tabla 
+let frutas = ["sandia","almendra", "kiwi", "fresa", "ciruela", "naranja", "fresa", "higo", "nuez", "melón", "pera", "naranja", "melocotón", "mango", "uva", "membrillo"];
+let contadorCategorias = countFruits(frutas); 
+impressData(contadorCategorias);
+console.table(contadorCategorias); //Imprime en formato tabla 
 
-
-let frutas2 =["sandía", "piña", "manzana", "mango", "pera", "limon", "fresa", "manzana", "piña", "mango", "mango", "pera", "fresa", "fresa"];
-let contadorItems = countItems(frutas2); //Uso del ciclo While
-impressData(contadorItems);
-console.table(countItems(frutas2));
 

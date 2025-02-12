@@ -43,4 +43,9 @@ function impressData(array){
 let frutas = ["manzana", "fresa", "manzana", "naranja", "fresa", "uvas", "manzana", "pera", "naranja", "uvas", "guayaba"];
 let contadorFrutas = countFruits(frutas); 
 impressData(contadorFrutas);
-console.table(countFruits(frutas));
+console.table(contadorFrutas);
+
+let frutas2 =["sandía", "piña", "manzana", "mango", "pera", "limon", "fresa", "manzana", "piña", "mango", "mango", "pera", "fresa", "fresa"];
+let contadorItems = countFruits(frutas2); //Uso del ciclo While
+impressData(contadorItems);
+console.table(contadorItems);
