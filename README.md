@@ -65,3 +65,24 @@
   ![Código](media/code-03.png)
 
 </details>
+
+
+### Clase 04 - Funciones
+
+<details>
+  <summary>Problema: Seguimiento de Libros</summary>
+
+   <br>Crea un sistema muy sencillo para hacer seguimiento de los libros que has leído
+
+  **Objetivos:**
+
+  *   **Modularidad**: Dividir el código en partes más pequeñas y manejables
+  *   **Reutilización** Crear funciones reutilizables para evitar la duplicación de código
+  *   **Parámetros y Argumentos**: Utilizar parámetros para recibir información externa y argumentos para pasar datos a las funciones.
+
+
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/04-Funciones/books.js)<br>
+
+  ![Código](media/code-04.png)
+
+</details>
