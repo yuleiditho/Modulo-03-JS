@@ -9,7 +9,7 @@ function addBook(library, title, autor, rated){
     if(!library[title]){
         library[title] = []; //objeto
     }
-    // Push: agrega el libro al arreglo de la categoría
+    // Push: agrega el libro al arreglo 
     library[title].push( {
             title: title,
             autor: autor,
@@ -38,9 +38,6 @@ function printDataTable(library) {
     console.table(allBooks);
  }
 
-
-
-
 let myLibrary = {}; //Inicializar el objeto de biblioteca 
 
 //llamada de la función agregar libros
@@ -51,5 +48,5 @@ addBook(myLibrary, "La Guerra de los Cielos ", "Trujillo, F.", "3/5");
 addBook(myLibrary, "El visitante ", "Katzenbach, J.", "4/5");
 //Llamada para imprimir 
 printData(myLibrary);
-
+//Llamada para imprimir en formato tabla
 printDataTable(myLibrary);
