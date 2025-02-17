@@ -77,7 +77,7 @@
   **Objetivos:**
 
   *   **Modularidad**: Dividir el código en partes más pequeñas y manejables
-  *   **Reutilización** Crear funciones reutilizables para evitar la duplicación de código
+  *   **Reutilización**: Crear funciones reutilizables para evitar la duplicación de código
   *   **Parámetros y Argumentos**: Utilizar parámetros para recibir información externa y argumentos para pasar datos a las funciones.
 
 
