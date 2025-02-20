@@ -72,17 +72,39 @@
 <details>
   <summary>Problema: Seguimiento de Libros</summary>
 
-   <br>Crea un sistema muy sencillo para hacer seguimiento de los libros que has leído
+   <br>Crea un sistema muy sencillo para hacer seguimiento de los libros que has leído.
 
   **Objetivos:**
 
-  *   **Modularidad**: Dividir el código en partes más pequeñas y manejables
-  *   **Reutilización**: Crear funciones reutilizables para evitar la duplicación de código
+  *   **Modularidad**: Dividir el código en partes más pequeñas y manejables.
+  *   **Reutilización**: Crear funciones reutilizables para evitar la duplicación de código.
   *   **Parámetros y Argumentos**: Utilizar parámetros para recibir información externa y argumentos para pasar datos a las funciones.
 
 
   [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/04-Funciones/books.js)<br>
 
   ![Código](media/code-04.png)
+
+</details>
+
+### Clase 05 - Objetos
+
+<details>
+  <summary>Problema: Crear un objeto a partir de un Libro</summary>
+
+   <br>Crear un objeto libro que contenga varias propiedades y un método para imprimir la información básica del libro.
+
+
+  **Objetivos:**
+
+  *   **Objetos**: Son instancias de clases. Un objeto es una entidad indepediente con propiedades y métodos definidos por su clase.
+  *   **Clases**: Son plantillas para crear objetos, facilitan la organización del código y permiten la reutilización de estructuras.
+  *   **Propiedades de Clase**: Son variables que pertenecen a una clase y almacenan datos específicos para cada instancia de la clase.
+  *   **Métodos**: Son funciones que pertenecen a una clase y definen comportamientos específicos para las instancias de la clase.
+
+
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/blob/main/05-Intro_Objects/library.js)<br>
+
+  ![Código](media/code-05.png)
 
 </details>
