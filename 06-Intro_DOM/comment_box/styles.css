@@ -1,0 +1,360 @@
+:root {
+    --blue: rgb(195, 237, 255);
+    --purple: rgb(178, 161, 245);
+    --yellow: rgb(255, 246, 227);
+    --pink: rgb(255, 204, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--blue);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.heading span {
+    color: rgb(158, 103, 247);
+}
+
+.demo {
+    padding-top: 10rem;
+    padding-bottom: 0;
+}
+
+.demo .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.demo .row .video-container {
+    flex: 1 1 50%;
+    position: relative;
+}
+
+.demo .row .video-container iframe {
+    width: 100%;
+    height: 500px;
+    border: 1.5rem solid #ffff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+}
+
+.demo .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #9d88fc;
+    background-color: rgba(140, 0, 255, 0.151);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.demo .row .content {
+    flex: 1 1 30rem;
+}
+
+.demo .row .content h3 {
+    font-size: 4rem;
+    color: #7262bd;
+    padding-bottom: 1.3rem;
+}
+
+.demo .row .content p {
+    font-size: 1.8rem;
+    color: #4e3e3e;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    color: #333;
+    background: var(--purple);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header ul, li, a {
+    list-style: none;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+header .logo:is(:hover,:active) {
+    font-size: 2rem;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.navbar a:is(:hover,:active) {
+    color: var(--purple);
+}
+
+.icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+.icons a:is(:hover,:active) {
+    font-size: 2.5rem;
+    color: var(--purple);
+    margin-left: 1.5rem;
+}
+
+.com-container h2 {
+    padding: 1.8rem 0;
+}
+
+.com-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.cnt-form {
+    background-color: var(--purple);
+    border-bottom: lightgrey;
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    overflow: hidden;
+    padding: 1.5rem;
+    width: 56%;
+}
+
+.cnt-form textarea {
+    border: 1px solid lightgray;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    height: 4rem;
+    width: 100%;
+    resize: none;
+    transition: height 0.35s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cnt-form textarea:focus {
+    outline: none;
+    height: 6rem;
+    border: 0.2rem solid rgb(88, 6, 143);
+    background-color: rgb(237, 227, 255);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+.cnt-form button {
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+
+.btn-send {
+    background-color: rgb(229, 195, 252);
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 800;
+    transition-duration: 0.5s;
+}
+
+.btn-send:is(:hover,:active) {
+    background-color: rgb(246, 170, 248);
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(136, 200, 238);
+    font-size: 24px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    margin-top: 1.8rem;
+}
+
+.user-icon:is(:hover,:active) {
+    background-color: rgb(75, 170, 199);
+}
+
+
+/* Estilos para los comentarios */
+.all-comments {
+    width: 56%;
+}
+
+.comment {
+    background-color: white;
+    padding: 1.5rem;
+    border-bottom: 0.1px solid ;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(136, 200, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.cmt-content {
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between; /* Separa el nombre y la fecha */
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.user-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.user-info span {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.cmt-content p {
+    font-size: 1.6rem;
+    color: #444;
+    margin: 0.5rem 0;
+    padding-bottom: 1.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between; /* Separa like/dislike y eliminar */
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.like-dislike {
+    display: flex;
+    gap: 1rem;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.actions button:hover {
+    color: rgb(81, 0, 128);
+}
+
+.delete-btn {
+    color: #ff4d4d; /* Color rojo para el botón de eliminar */
+}
+
+.delete-btn:hover {
+    color: #cc0000; /* Color rojo más oscuro al pasar el mouse */
+}
