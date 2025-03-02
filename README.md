@@ -116,7 +116,7 @@
 
    <br>Crear una caja de comentarios donde los usuarios puedan escribir y agregar comentarios que se muestran en la página.
    
-   [Live DEMO](https://modulo-03-js.vercel.app/)<br>
+  <a href="https://modulo-03-js.vercel.app/" target="_blank">Live DEMO</a><br>
 
   **Objetivos:**
 
