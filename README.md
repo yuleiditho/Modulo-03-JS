@@ -125,6 +125,6 @@
   *   **Eventos en Formularios**: Aprender a capturar eventos de formularios, como el envío de datos .
 
 
-  ![Código](media/code-06.png)
+  ![Vista Previa](media/code-06.png)
 
 </details>
