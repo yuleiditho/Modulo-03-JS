@@ -108,3 +108,23 @@
   ![Código](media/code-05.png)
 
 </details>
+
+### Clase 06 - Intro DOM
+
+<details>
+  <summary>Problema: Comment Box</summary>
+
+   <br>Crear una caja de comentarios donde los usuarios puedan escribir y agregar comentarios que se muestran en la página.
+   
+   [Live DEMO](https://modulo-03-js.vercel.app/)<br>
+
+
+  **Objetivos:**
+
+  *   **DOM**: Aprender a navegar y manipular DOM para modificar el contenido y la estructura de una página web.
+  *   **Eventos en Formularios**: Aprender a capturar eventos de formularios, como el envío de datos .
+
+
+  ![Código](media/code-06.png)
+
+</details>
