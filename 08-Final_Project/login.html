@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/media/icons8-space-16.png" type="image/x-icon">
+    </head>
+    <body>
+
+        <header>
+            <a href="" class="logo">dev-space<span>⚛️</span></a>
+        </header>
+        <div class="login-wrapper">
+            <div class="login-side">
+                
+                <div class="my-form-wrapper">
+                    <div class="login-row">
+                        <h1>Welcome ⚛️</h1>
+                    </div>
+                    <form class="my-form">
+                        <div class="text-field">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" placeholder="Your Username" required>
+                            <img alt="User Icon" src="assets/media/user-icon.svg">
+                        </div>
+                    
+                        <div class="text-field">
+                            <label for="password">Password:</label>
+                            <input id="password" type="password" name="password" placeholder="Your Password" required>
+                        </div>
+                    
+                        <p id="error-message" class="error-message">Datos incorrectos, inténtelo de nuevo!</p>
+                        <input type="submit" class="my-form-button" value="Login">
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="info-side">
+                <img src="assets/media/mask.png" alt="main photo" class="mockup">
+            </div>
+        </div>
+        <script src="assets/scripts/login.js"></script>
+    </body>
+</html>
+

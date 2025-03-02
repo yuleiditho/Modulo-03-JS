@@ -1,0 +1,564 @@
+:root {
+    --primary: hsl(261, 50%, 35%);
+    --primary-hover: #a77cd4;
+    --important: #F55E5E;
+    --bg-white: rgb(118, 100, 167);
+    --logo: rgb(204, 200, 194);
+
+    --blue: rgb(195, 237, 255);
+    --purple: rgb(178, 161, 245);
+    --yellow: rgb(255, 246, 227);
+    --pink: rgb(255, 204, 234);
+}
+
+html{
+    height: auto;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    background: var(--bg-white);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: .2s linear;
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--primary);
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; 
+}
+
+.logo a{
+    font-size: 2rem;
+    color: var(--logo);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo a:hover{
+    color: var(--primary-hover);
+}
+
+.navigation-group {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-wrapper button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-wrapper .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-wrapper:hover, 
+.icon-wrapper:focus {
+    background-color: var(
+        --primary-hover
+    );
+}
+
+.icon-wrapper i{
+    font-size: 1.5rem;
+    color: #e6e36c;
+}
+
+.profile {
+    margin: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.profile img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #f7f7f7;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.sidebar{
+    position:fixed;
+    top: 10px;
+    left: 10%;
+    height:90vh;
+    border-radius: 1rem;
+    user-select: none;
+    max-width: 18rem;
+    min-width: 4rem;
+    border-radius: 1rem;
+    background-color: #32195f;
+}
+
+.sidebar-top a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 1.8rem;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    color: rgb(234, 225, 240);
+}
+
+.sidebar-top a:hover{
+    color: var(--primary-hover)
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    height: 70vh; 
+    width: 4rem;
+    border-radius: 1rem;
+    background-color: #32195f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.sidebar-top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.sidebar-top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    height: 100%; 
+}
+
+.sidebar-top li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgb(234, 225, 240);
+    padding: 1rem;
+}
+
+.sidebar-top a:hover {
+    color: var(--primary-hover);
+}
+
+section {
+    padding-left: 8.8%;
+    padding-right: 8%;
+    z-index: 1;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    color: white;
+    letter-spacing: .05em;
+}
+
+.welcome p{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(246, 248, 146)
+}
+
+.demo {
+    padding-top: 8rem;
+    padding-bottom: 0;
+}
+
+.demo .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.demo .row .video-container {
+    flex: 1 1 30%;
+    position: relative;
+}
+
+.demo .row .video-container iframe {
+    width: 100%;
+    height: 70vh;
+    border: 0.25rem solid #7f9be7;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.637);
+    object-fit: cover;
+}
+
+.demo .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #9d88fc;
+    background-color: rgba(140, 0, 255, 0.151);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.demo .row .box-container {
+    flex: 1 1 10%;
+}
+
+
+.info-video h3{
+    color: white;
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+}
+
+.info-video p{
+    color: white;
+    margin: 0.8rem 0;
+}
+
+.btn-like{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-like button, small{
+    width: 80px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.637);
+    background-color: #eeeeee;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.15rem 0.5rem;
+
+}
+
+.btn-like button{
+    border: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-like button:hover {
+    background-color: var(--primary-hover);
+}
+  
+.btn-like button:active {
+    background-color: #5a1394;
+    transform: scale(0.98); 
+}
+
+.btn-like .fa-heart:active{
+    color: #f0f0f0;
+}
+
+.box-container {
+    width: 100%;
+    margin-left: 2.2%;
+    padding: 1.2rem 0.85rem;
+    height: 70vh; /* Altura máxima */
+    background-color: rgb(91, 63, 117);
+    border-radius: 0.6rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.637);
+    display: flex;
+    flex-direction: column;
+}
+
+.cnt-form {
+    padding-top: 1.05rem;
+    width: 100%;
+}
+
+.cnt-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(160, 129, 180);
+    border-radius: 0.5rem;
+    padding: .8rem .5rem;
+}
+
+.user-avatar{
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: cover;
+    border: 2px solid #f7f7f7;
+    box-shadow: 0 .5rem 0.5rem rgba(0, 0, 0, 0.637);
+    margin-right: 0.8rem;
+    transition: height 0.35s ease-in-out;display: block; 
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.user-avatar:hover {
+    transform: scale(1.05);
+}
+
+.cnt-textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 0.65rem 0.8rem;
+    border-radius: 0.4rem;
+    height: 3rem;
+    resize: none;
+    transition: height 0.35s ease-in-out;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.637);
+    font-size: 18px;
+}
+
+.cnt-form textarea:focus {
+    outline: none;
+    border: 0.2rem solid rgb(88, 6, 143);
+    background-color: rgb(237, 227, 255);
+}
+
+.btn-send{ 
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 0.8rem;
+    object-fit: cover;
+}
+
+.btn-send {
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.637);
+    background-color: rgb(221, 186, 245);
+    color: #333;
+    font-weight: 800;
+    transition-duration: 0.5s;
+    font-size: 1.25rem;
+    color: rgb(59, 14, 73);
+}
+
+.btn-send:is(:hover,:active) {
+    background-color: var(--primary-hover);
+    color: whitesmoke;
+}
+
+.show-comment {
+    background-color: rgb(208, 201, 233);
+    border-bottom: 0.1px solid ;
+    display: flex;
+    align-items: flex-start;
+    padding: .5rem .5rem;
+    margin-top: 0.2rem;
+    border-radius: 0.5rem;   
+}
+
+.user-info h2{
+    font-size: 20px;
+}
+
+.user-info span{
+    font-size: 12px;
+}
+
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(136, 200, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.cmt-content {
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.user-info h2 {
+    color: #333;
+    margin: 0;
+}
+
+.user-info span {
+    color: #1f1b22;
+    font-size: 14.5px;
+    font-weight: bolder;
+}
+
+.cmt-content p {
+    color: #1c0825;
+    font-size: 16px;
+    margin: 0.25rem 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right: 0.9rem;
+}
+
+.actions button {
+    border: none;
+    cursor: pointer;
+    color: #2d0f41; 
+    font-size: 20px;
+}
+
+.delete-btn:hover {
+    color: #3f4dc4; 
+}
+
+.btn-like button.liked {
+    color: red;
+}
+
+#all-comments {
+    flex: 1; 
+    max-height: 50vh; 
+    overflow-y: auto; 
+    padding-right: 0.5rem; 
+}
+
+#all-comments::-webkit-scrollbar {
+    width: 8px;
+}
+
+#all-comments::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+#all-comments::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #271844 ;
+    width: 100%;
+    min-width: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container a{
+    padding: 0.7rem 3.5rem;;
+    color: var(--logo);
+}
+
+.footer-container a:hover{
+    color: var(--primary-hover);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 3.5rem; 
+        height: 60vh; 
+    }
+
+    .sidebar-top a {
+        font-size: 1.2rem; 
+        padding: 0.8rem;
+    }
+
+    header {
+        padding: 0 5rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 3rem;
+        height: 50vh; 
+    }
+
+    .sidebar-top a {
+        font-size: 1rem; 
+        padding: 0.6rem;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+}

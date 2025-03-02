@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DevSpace</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="shortcut icon" href="assets/media/icons8-space-16.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+
+            <div class="logo">
+                <a href="">devspace<span>⚛️</span></a>
+            </div>
+
+            <div class="navigation-group">
+                <button class="icon-wrapper">
+                    <img class="icon" src="assets/media/message.svg" alt="Message">
+                </button>
+                <div class="icon-wrapper">
+                    <button type="button">
+                        <img class="icon" src="assets/media/notification.svg" alt="Notification">
+                    </button>
+                </div>
+                <button type="button" class="profile">
+                    <img id="profileImage" src="assets/media/profiles/user_default.png" alt="Profile Picture">
+                </button>                
+                <div class="icon-wrapper">
+                    <button type="button " onclick="logOut()">
+                       <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
+
+                
+            </div>
+            
+            
+        </header>
+        
+        <nav class="sidebar">
+            <div class="sidebar-top">
+                <ul>
+
+                    <li><a href="#" class="fa fa-house"></a></li>
+                    <li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+                    <li><a href="#" class="fa-solid fa-plus"></a></li>
+                    <li><a href="#" class="fa-solid fa-bell"></a></li>
+                    <li><a href="#" class="far fa-star"></a></li>
+                    
+                    <li><a href="#" class="fa-regular fa-calendar"></a></li>
+                    <li><a href="#" class="fa-solid fa-headphones"></a></li>
+                    
+                    
+                    <li class="icon-last"><a href="#" class="fa-solid fa-gear"></a></li> 
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <section class="welcome">
+            <h1>Welcome!</h1>
+            <p id="profile-name">Deny</p>
+        </section>
+
+        <section class="demo">
+            <div class="row">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ZK-rNEhJIDs?si=gKXqEC_c0zamU7kQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Demo</h3>
+                </div>
+
+                <div class="box-container">
+                    <div class="info-video">
+                        
+                        <h3>Demo Video</h3>
+                        <p class="text">Comparte tu opinión con la comunidad</p>
+                    </div>
+                    
+                    <div class="btn-like">
+                        <button id="like-btn" class="fa-solid fa-heart" data-liked="false"></button>
+                        <small id="like-count">15</small>
+                    </div>
+                    
+
+                    <div class="cnt-form">
+                        <form id="comment-form">
+                            <img id="profile-avatar" src="assets/media/profiles/user_default.png" class="user-avatar" alt="Profile Avatar">
+                            <textarea class="cnt-textarea" tabindex="1" id="comment" required placeholder="Agrega un comentario"></textarea>
+                            <button type="submit" class="btn-send fa-regular fa-paper-plane "></button>
+                        </form>
+                    </div>
+
+                    <div id="all-comments">
+                        <div class="show-comment">
+                            <div>
+                                <img src="assets/media/profiles/cat.jpg" class="user-avatar"></img>
+                            </div>
+
+                            <div class="cmt-content">
+                                <div class="user-info">
+                                    <h2>Wendy Órtiz</h2>
+                                    <span>✔️ 25/2/2025, 14:00:00 PM</span>
+                                </div>
+                                <p>Me encanta este producto 😇</p>
+                                <div class="actions">
+                                        <button class="delete-btn fa-solid fa-trash"></button> 
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+
+               
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-container">
+                <ul>
+                    <li><a href="https://github.com/yuleiditho" class="fa-brands fa-github" target="_blank"></a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+
+        <script src="assets/scripts/home.js"></script>
+    </body>
+</html>
