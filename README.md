@@ -122,6 +122,8 @@
   *   **Eventos en Formularios**: Aprender a capturar eventos de formularios, como el envío de datos. <br><br>
 
   ![Vista Previa](media/code-06.png)
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/tree/main/06-Intro_DOM/comment_box)<br>
+  
 
 </details>
 
@@ -143,6 +145,7 @@
 
 
   ![Vista Previa](media/code-07.png)
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/tree/main/07-DOM/password_generate)<br>
 
 </details>
 
@@ -173,4 +176,6 @@
   
   ### home.html
   <img src="media/final.png" alt="App" width="800">
+
+  [Enlace al código](https://github.com/yuleiditho/Modulo-03-JS/tree/main/08-Final_Project)<br>
 </details>
