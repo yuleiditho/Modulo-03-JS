@@ -145,3 +145,32 @@
   ![Vista Previa](media/code-07.png)
 
 </details>
+
+### Proyecto Final
+
+<details>
+  <summary>App Comment Box</summary>
+  <br>
+  Caja de comentarios donde los usuarios pueden escribir, agregar y eliminar comentarios de forma local.
+  <br><br>
+
+  **Objetivos:**
+
+  * **DOM**: Implementar modificaciones dinámicas en la página web, como cambiar el contenido o el estilo de los elementos.
+  * **LocalStorage**: Aprender a almacenar y recuperar datos del localStorage.
+  <br><br>
+
+  **Usuarios Predefinidos:** 
+
+  | Username | Password |
+  | -------- | -------- |
+  | denisse  | 1234     |
+  | mario    | abc      |
+  | luz22    | abc      |
+
+  ### login.html
+  <img src="media/login.png" alt="App" width="800">
+  
+  ### home.html
+  <img src="media/final.png" alt="App" width="800">
+</details>
