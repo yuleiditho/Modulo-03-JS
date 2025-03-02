@@ -352,9 +352,9 @@ header .fa-bars {
 }
 
 .delete-btn {
-    color: #ff4d4d; /* Color rojo para el botón de eliminar */
+    color: #6c1cc7; /* Color rojo para el botón de eliminar */
 }
 
 .delete-btn:hover {
-    color: #cc0000; /* Color rojo más oscuro al pasar el mouse */
+    color: #ff1919; /* Color rojo más oscuro al pasar el mouse */
 }

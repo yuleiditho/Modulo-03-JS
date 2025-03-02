@@ -77,3 +77,16 @@ document.getElementById('comment-form').addEventListener('submit', function (e) 
     e.preventDefault(); // Evitar que el formulario se envíe
     addComment(); // Llamar a la función para agregar el comentario
 }); 
+
+function addEventListenersToComment(commentElement) {
+
+    const deleteBtn = commentElement.querySelector('.delete-btn');
+    if (deleteBtn) {
+        deleteBtn.addEventListener('click', function () {
+            const confirmDelete = confirm("¿Estás seguro de que quieres eliminar este comentario?");
+            if (confirmDelete) {
+                commentElement.remove();
+            }
+        });
+    }
+}
