@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    
+    <title>Password Generate</title>
+</head>
+<body>
+    
+    
+    <section class="main-container">
+
+        <div class="title">
+            <p>Password Generate</p>
+        </div>
+
+        <div class="pwd-container">
+            <p class="password-display">P4$5W0rD!</p>
+            <span class="far fa-copy" id="copy-btn"> </span>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="form-container">
+            <form id="form-action">
+                <div class="char-container">
+                    <p>Character Length</p>
+                    <p id="character-length">0</p>
+                </div>
+
+                <div class="range-slider">
+                    <label for="slider" class="hidden-label"></label>
+                    <input class="slider" type="range" name="slider" id="slider" min="0" max="20" value="0">
+                </div>
+               
+                <div class="select-check">
+                    <div class="row">
+                        <input type="checkbox" name="uppercase" id="uppercase" value="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label> 
+                    </div>
+                    
+                    <div class="row">
+                        <input type="checkbox" name="lowercase" id="lowercase" value="lowercase">
+                        <label for="lowercase">Include Lowercase Letters </label>
+                    </div>
+                    
+                    <div class="row">
+                        <input type="checkbox" name="numbers" id="numbers" value="numbers"> 
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    
+                    <div class="row">
+                        <input type="checkbox" name="symbols" id="symbols" value="symbols"> 
+                        <label for="symbols">Include Symbols</label> 
+                    </div>
+                </div>
+
+                <div class="strength-container">
+                    <p>STRENGTH</p>
+
+                    <div class="bars-container">
+                        <p class="msg-bars">-------</p>
+                        <span id="too-weak"></span>
+                        <span id="weak"></span>
+                        <span id="medium"></span>
+                        <span id="strong"></span>
+                        
+                    </div>
+
+                </div>  
+
+                <div class="btn-container">
+                    <button type="submit" class="ui-btn">
+                    <span>GENERATE</span>
+                    </button>
+                    <span class="msg-error">⚠️ Select a checkbox above!!!</span>
+
+                </div>
+            </form> 
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

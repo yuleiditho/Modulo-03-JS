@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --background: rgb(26, 25, 33);
+    --box-color: rgb(34, 33, 41);
+    --green: rgb(163, 255, 174);
+    --op-white: rgb(220, 220, 224);
+    --light-gray:rgb(83, 82, 89);
+    --nw-white:rgb(231, 230, 235);
+    --dark-gray: hsl(248, 10%, 15%);
+    --dark-red: rgb(226, 29, 29);
+}
+
+/* CSS reset */
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.main-container{
+    background-color: var(--box-color);
+    margin: 1rem;
+    width: 100%;
+    min-width: 18rem;
+    max-width: 25rem;
+}
+
+.title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--background);
+    padding-bottom: 1.5rem;
+    color: rgb(133, 132, 132);
+}
+
+.pwd-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;  
+    gap: 0.5rem;
+}
+
+.password-display {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--light-gray);
+}
+
+.pwd-container span{
+    color: var(--green);
+    font-size: 1.5rem;
+    transition: .2s linear;
+}
+
+.pwd-container span:is(:hover, :active){
+    color: rgb(232, 231, 230);
+}
+.space{
+    padding: 0.65rem;
+    background-color: var(--background);
+}
+.form-container{
+    margin: 20px 30px;
+    color: var(--nw-white);
+}
+
+.char-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.char-container p:first-child{
+    font-size: 1.05rem;
+}
+
+.char-container p:last-child{
+    font-size: 1.35rem;
+}
+
+#character-length{
+    color: var(--green);
+}
+
+.range-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.hidden-label{
+    display: none;
+}
+
+.range-slider input{
+    width: 100%;
+}
+
+input[type="range"]{
+    accent-color: var(--green);
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+.select-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 0.25rem;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.select-check label{
+    font-weight: 200;
+    padding: 0.5rem 1rem;
+}
+
+.strength-container{
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+  
+.strength-container p{
+    color: rgb(167, 167, 167);
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ui-btn{
+    border: 0;
+    background-color: var(--green);
+    width: 100%;
+    height: 50px;
+    transition: .2s linear;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ui-btn:is(:hover,:active) {
+    background-color: var(--box-color);
+    border: 1px solid var(--green);
+    color:  var(--green);
+    width: 100%;
+    height: 50px;
+    transition: .2s linear;
+}
+
+.msg-error{
+    display: none;
+    font-size: 0.875rem;
+    color: var(--dark-red);
+    margin-top: 1.5rem ;
+}
+
+.msg-error0{
+    display: none;
+    font-size: 0.875rem;
+    color: rgb(247, 188, 80);
+    margin-top: 1.5rem ;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: transparent;
+    height: 1.15rem;
+    width: 1.15rem;
+    border: 2px solid var(--nw-white);
+    color: var(--nw-white);
+  }
+  
+  input[type='checkbox']:hover {
+    border: 2px solid var(--green);
+    transition: all 0.1s ease-in;
+  }
+  
+  input[type="checkbox"]:after {
+    content: ' ';
+    position: relative;
+    left: 35%;
+    top: 5%;
+    width: 40%;
+    height: 80%;
+    border: solid var(--dark-gray);
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    display: block;
+  }
+  
+  input[type='checkbox']:checked {
+    background: var(--green);
+    color: var(--background);
+    border: none;
+  }
+
+
+/*  Estilos aplicados cuando se genera una contraseña */
+.password-style {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+/*  Colores de fortaleza de contraseña */
+.too-weak-color { 
+    color: #ff3f3f; 
+}
+.weak-color { 
+    color: #db8080; 
+}
+.medium-color {
+     color: #f8cb63; 
+}
+.strong-color { 
+    color: #a3ffae; 
+}
