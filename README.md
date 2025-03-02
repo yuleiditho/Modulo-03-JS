@@ -118,12 +118,10 @@
    
    [Live DEMO](https://modulo-03-js.vercel.app/)<br>
 
-
   **Objetivos:**
 
   *   **DOM**: Aprender a navegar y manipular DOM para modificar el contenido y la estructura de una página web.
-  *   **Eventos en Formularios**: Aprender a capturar eventos de formularios, como el envío de datos .
-
+  *   **Eventos en Formularios**: Aprender a capturar eventos de formularios, como el envío de datos. <br><br>
 
   ![Vista Previa](media/code-06.png)
 
