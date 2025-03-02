@@ -171,6 +171,6 @@ function logOut() {
     
     if (confirmation) {
         localStorage.removeItem("loggedUser");
-        window.location.href = "login.html"; 
+        window.location.href = "../login.html"; 
     }
 }

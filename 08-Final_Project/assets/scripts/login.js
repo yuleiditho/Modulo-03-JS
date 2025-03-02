@@ -1,8 +1,8 @@
 // Usuarios predefinidos
 const users = {
-    'denior': { name: "Denisse Oliva", username: "denisse", password: "1234", image: "assets/media/profiles/jake.jpg" },
-    'marcos1': { name: "Mario Marcos", username: "mario", password: "abc", image: "assets/media/profiles/profile_man.jpg" },
-    'luz22': { name: "Luz Casas", username: "luz22", password: "abc", image: "assets/media/profiles/profile_woman.jpg" }
+    'denior': { name: "Denisse Oliva", username: "denisse", password: "1234", image: "media/profiles/jake.jpg" },
+    'marcos1': { name: "Mario Marcos", username: "mario", password: "abc", image: "media/profiles/profile_man.jpg" },
+    'luz22': { name: "Luz Casas", username: "luz22", password: "abc", image: "media/profiles/profile_woman.jpg" }
 };
 
 // Comentarios predefinidos
@@ -31,7 +31,7 @@ function logIn(event) {
         }
 
         // Redirigir a home
-        window.location.href = "home.html";
+        window.location.href = "assets/home.html";
     } else {
         // Mostrar error
         errorMessage.textContent = "Datos incorrectos, inténtelo de nuevo!";
